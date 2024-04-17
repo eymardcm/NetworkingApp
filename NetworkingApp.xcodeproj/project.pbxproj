@@ -16,6 +16,9 @@
 		C0FB6F962BCC7B0D00A48AF1 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6F952BCC7B0D00A48AF1 /* CharacterModel.swift */; };
 		C0FB6F992BCC7D8B00A48AF1 /* FetchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6F982BCC7D8B00A48AF1 /* FetchController.swift */; };
 		C0FB6F9C2BCCBFDB00A48AF1 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6F9B2BCCBFDB00A48AF1 /* Constants.swift */; };
+		C0FB6F9F2BCE044700A48AF1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6F9E2BCE044700A48AF1 /* ViewModel.swift */; };
+		C0FB6FA12BCE0EF100A48AF1 /* QuoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6FA02BCE0EF100A48AF1 /* QuoteView.swift */; };
+		C0FB6FA32BCF3E8000A48AF1 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0FB6FA22BCF3E8000A48AF1 /* CharacterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,9 @@
 		C0FB6F952BCC7B0D00A48AF1 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
 		C0FB6F982BCC7D8B00A48AF1 /* FetchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchController.swift; sourceTree = "<group>"; };
 		C0FB6F9B2BCCBFDB00A48AF1 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		C0FB6F9E2BCE044700A48AF1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		C0FB6FA02BCE0EF100A48AF1 /* QuoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteView.swift; sourceTree = "<group>"; };
+		C0FB6FA22BCF3E8000A48AF1 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,11 +67,14 @@
 		C0FB6F7D2BCC73B300A48AF1 /* NetworkingApp */ = {
 			isa = PBXGroup;
 			children = (
+				C0FB6F9D2BCE043500A48AF1 /* ViewModel */,
 				C0FB6F9A2BCCBFCD00A48AF1 /* Utility */,
 				C0FB6F972BCC7D7100A48AF1 /* Controllers */,
 				C0FB6F922BCC7A0200A48AF1 /* Models */,
 				C0FB6F7E2BCC73B300A48AF1 /* NetworkingAppApp.swift */,
 				C0FB6F802BCC73B300A48AF1 /* ContentView.swift */,
+				C0FB6FA02BCE0EF100A48AF1 /* QuoteView.swift */,
+				C0FB6FA22BCF3E8000A48AF1 /* CharacterView.swift */,
 				C0FB6F8E2BCC75A900A48AF1 /* Data */,
 				C0FB6F822BCC73B300A48AF1 /* Assets.xcassets */,
 				C0FB6F842BCC73B300A48AF1 /* Preview Content */,
@@ -112,6 +121,14 @@
 				C0FB6F9B2BCCBFDB00A48AF1 /* Constants.swift */,
 			);
 			path = Utility;
+			sourceTree = "<group>";
+		};
+		C0FB6F9D2BCE043500A48AF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C0FB6F9E2BCE044700A48AF1 /* ViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,9 +205,12 @@
 				C0FB6F812BCC73B300A48AF1 /* ContentView.swift in Sources */,
 				C0FB6F962BCC7B0D00A48AF1 /* CharacterModel.swift in Sources */,
 				C0FB6F992BCC7D8B00A48AF1 /* FetchController.swift in Sources */,
+				C0FB6FA12BCE0EF100A48AF1 /* QuoteView.swift in Sources */,
 				C0FB6F7F2BCC73B300A48AF1 /* NetworkingAppApp.swift in Sources */,
 				C0FB6F942BCC7A1300A48AF1 /* QuoteModel.swift in Sources */,
+				C0FB6FA32BCF3E8000A48AF1 /* CharacterView.swift in Sources */,
 				C0FB6F9C2BCCBFDB00A48AF1 /* Constants.swift in Sources */,
+				C0FB6F9F2BCE044700A48AF1 /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,6 +347,7 @@
 				DEVELOPMENT_TEAM = UHCN8F9756;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Networking App of Quotes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -356,6 +377,7 @@
 				DEVELOPMENT_TEAM = UHCN8F9756;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Networking App of Quotes";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
